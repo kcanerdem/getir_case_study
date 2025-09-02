@@ -1,0 +1,16 @@
+{
+"type": "FeatureCollection",
+"name": "warehouse",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "fid": 0, "City_Name": "Bursa", "Warehouse1": "wh_1", "Longitude": 28.913683264046306, "Latitude": 40.223469763314249 }, "geometry": { "type": "Point", "coordinates": [ 28.913683264046306, 40.223469763314249 ] } },
+{ "type": "Feature", "properties": { "fid": 1, "City_Name": "Bursa", "Warehouse1": "wh_2", "Longitude": 29.009756065471944, "Latitude": 40.199253672354843 }, "geometry": { "type": "Point", "coordinates": [ 29.009756065471944, 40.199253672354843 ] } },
+{ "type": "Feature", "properties": { "fid": 2, "City_Name": "Bursa", "Warehouse1": "wh_3", "Longitude": 28.969917944818643, "Latitude": 40.220589307149297 }, "geometry": { "type": "Point", "coordinates": [ 28.969917944818643, 40.220589307149297 ] } },
+{ "type": "Feature", "properties": { "fid": 3, "City_Name": "Bursa", "Warehouse1": "wh_4", "Longitude": 29.057349251431742, "Latitude": 40.187395757125202 }, "geometry": { "type": "Point", "coordinates": [ 29.057349251431742, 40.187395757125202 ] } },
+{ "type": "Feature", "properties": { "fid": 4, "City_Name": "Bursa", "Warehouse1": "wh_5", "Longitude": 28.953622649755523, "Latitude": 40.262806281331997 }, "geometry": { "type": "Point", "coordinates": [ 28.953622649755523, 40.262806281331997 ] } },
+{ "type": "Feature", "properties": { "fid": 5, "City_Name": "Bursa", "Warehouse1": "wh_6", "Longitude": 28.945764437645298, "Latitude": 40.20114630318146 }, "geometry": { "type": "Point", "coordinates": [ 28.945764437645298, 40.20114630318146 ] } },
+{ "type": "Feature", "properties": { "fid": 6, "City_Name": "Bursa", "Warehouse1": "wh_7", "Longitude": 29.09816551836284, "Latitude": 40.184361287480002 }, "geometry": { "type": "Point", "coordinates": [ 29.09816551836284, 40.184361287480002 ] } },
+{ "type": "Feature", "properties": { "fid": 7, "City_Name": "Bursa", "Warehouse1": "wh_8", "Longitude": 28.999040721187807, "Latitude": 40.244276939275231 }, "geometry": { "type": "Point", "coordinates": [ 28.999040721187807, 40.244276939275231 ] } },
+{ "type": "Feature", "properties": { "fid": 8, "City_Name": "Bursa", "Warehouse1": "wh_9", "Longitude": 28.839261830915145, "Latitude": 40.225475274442267 }, "geometry": { "type": "Point", "coordinates": [ 28.839261830915145, 40.225475274442267 ] } }
+]
+}
