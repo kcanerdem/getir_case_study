@@ -27,18 +27,22 @@ ORDER BY
 CREATE TABLE public.temel_kpi_mahalle AS
 SELECT
   v.mahalle_id, v.il, v.ilce, v.mahalle,
-  COUNT(v.order_id)                 AS siparis_sayisi,
-  ROUND(AVG(v.delivery_min), 2)     AS ort_teslim_suresi,
-  ROUND(SUM(v.profit), 2)           AS toplam_kar,
-  ROUND(AVG(v.profit), 2)           AS ort_kar,
-  ROUND(AVG(v.basket_value), 2)     AS ort_sepet_tutari,
-  ROUND(AVG(v.revenue), 2)          AS ort_revenue,
-  ROUND(SUM(v.revenue), 2)          AS toplam_revenue,
-  v.mahalle_geom                    AS geometry
+  COUNT(DISTINCT v.order_id)                    AS siparis_sayisi,
+  ROUND(AVG(v.delivery_min), 2)                 AS ort_teslim_suresi,
+  ROUND(SUM(COALESCE(v.profit,0)), 2)          AS toplam_kar,
+  ROUND(AVG(COALESCE(v.profit,0)), 2)          AS ort_kar,
+  ROUND(AVG(COALESCE(v.basket_value,0)), 2)    AS ort_sepet_tutari,
+  ROUND(AVG(COALESCE(v.revenue,0)), 2)         AS ort_revenue,
+  ROUND(SUM(COALESCE(v.revenue,0)), 2)         AS toplam_revenue,
+  j.nufus,
+  j.agirlikli_ses_skoru,
+  v.mahalle_geom                                 AS geometry
 FROM siparis_mahalle_v v
-GROUP BY v.mahalle_id, v.il, v.ilce, v.mahalle, v.mahalle_geom
+JOIN mahalle_joined j
+  ON j.mahalle_id = v.mahalle_id      
+GROUP BY
+  v.mahalle_id, v.il, v.ilce, v.mahalle, j.nufus, j.agirlikli_ses_skoru, v.mahalle_geom
 ORDER BY siparis_sayisi DESC;
-
 
 CREATE TABLE public.kpi_sla_mahalle AS
 SELECT 
@@ -74,6 +78,3 @@ JOIN (
 ) o ON v.mahalle_id = o.mahalle_id
 GROUP BY v.mahalle_id, v.il, v.ilce, v.mahalle
 ORDER BY asma_orani_yuzde DESC;
-
-
-

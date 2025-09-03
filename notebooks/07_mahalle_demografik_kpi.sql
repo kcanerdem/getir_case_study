@@ -31,10 +31,11 @@ SELECT
   COUNT(DISTINCT v.client_id) AS musteri_sayisi,
   m.nufus,
   ROUND(COUNT(v.order_id)::decimal / NULLIF(m.nufus, 0), 4) AS talep_yogunlugu,
-  ROUND(COUNT(DISTINCT v.client_id)::decimal / NULLIF(m.nufus, 0), 4) AS penetrasyon_orani
+  ROUND(COUNT(DISTINCT v.client_id)::decimal / NULLIF(m.nufus, 0), 4) AS penetrasyon_orani,
+  m.geometry
 FROM siparis_mahalle_v v
 JOIN mahalle_joined m ON v.mahalle_id = m.mahalle_id
-GROUP BY v.mahalle_id, v.mahalle, v.ilce, m.nufus, m.agirlikli_ses_skoru
+GROUP BY v.mahalle_id, v.mahalle, v.ilce, m.nufus, m.agirlikli_ses_skoru,m.geometry
 ORDER BY penetrasyon_orani DESC;
 
 
@@ -48,10 +49,11 @@ WITH mahalle_kpi AS (
     COUNT(DISTINCT v.client_id) AS musteri_sayisi,
     m.nufus,
     ROUND(COUNT(v.order_id)::decimal / NULLIF(m.nufus, 0), 4) AS talep_yogunlugu,
-    m.agirlikli_ses_skoru
+    m.agirlikli_ses_skoru,
+    m.geometry
   FROM siparis_mahalle_v v
   JOIN mahalle_joined m ON v.mahalle_id = m.mahalle_id
-  GROUP BY v.mahalle_id, v.mahalle, v.ilce, m.nufus, m.agirlikli_ses_skoru
+  GROUP BY v.mahalle_id, v.mahalle, v.ilce, m.nufus, m.agirlikli_ses_skoru, m.geometry
 ),
 ortalama AS (
   SELECT
@@ -69,7 +71,3 @@ SELECT
   END AS mahalle_segmenti
 FROM mahalle_kpi k, ortalama o
 ORDER BY mahalle_segmenti;
-
-
-
-
