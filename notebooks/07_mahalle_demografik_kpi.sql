@@ -71,3 +71,27 @@ SELECT
   END AS mahalle_segmenti
 FROM mahalle_kpi k, ortalama o
 ORDER BY mahalle_segmenti;
+
+ALTER TABLE mahalle_talep_penetrasyon_orani
+ADD COLUMN siparis_yog_km2 NUMERIC;
+
+
+UPDATE mahalle_talep_penetrasyon_orani m
+SET siparis_yog_km2 =
+    m.toplam_siparis::numeric
+    / NULLIF(j.alan / 1000000.0, 0)
+FROM mahalle_joined j
+WHERE j.mahalle_id = m.mahalle_id;
+
+
+
+ALTER TABLE mahalle_talep_penetrasyon_orani
+ADD COLUMN musteri_yog_km2 NUMERIC
+
+UPDATE mahalle_talep_penetrasyon_orani m
+SET musteri_yog_km2 =
+      m.toplam_siparis::numeric
+      / NULLIF(j.alan / 1000000.0, 0)
+FROM mahalle_joined j
+WHERE j.mahalle_id = m.mahalle_id;
+
