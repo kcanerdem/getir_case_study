@@ -48,6 +48,7 @@ Bu değerler oranlanarak mahalle ölçeğinde kâr marjı (%) bulundu.
 ### D) Mahalle Nüfusu ile Kpi İlişkisi 
 
 <img width="1145" height="747" alt="image" src="https://github.com/user-attachments/assets/2fce1176-0bba-418e-83b5-49c3fd5f0c35" />
+
 - Kalabalık mahalleler yüksek gelir ve kâr potansiyeli sunuyor.
 
 ### E) Mahalle Bazında talep Yoğunluğu ve Penetrasyon Oranı Hesaplanması
@@ -65,7 +66,7 @@ Penetrasyon oranı için ise: Her mahalle için siparişlerden elde edilen benze
 
 <img width="1459" height="770" alt="image" src="https://github.com/user-attachments/assets/b05406c6-4943-4042-85fb-34851286d07c" />
 
-### E) Mekansal İstatistiklerle Premium Pazar Alanları
+### G) Mekansal İstatistiklerle Premium Pazar Alanları
 
 <img width="1455" height="770" alt="image" src="https://github.com/user-attachments/assets/fb326b7a-3f2f-48d9-bca8-9ae61f600f42" />
 
@@ -92,19 +93,19 @@ Penetrasyon oranı için ise: Her mahalle için siparişlerden elde edilen benze
 <img width="1329" height="940" alt="image" src="https://github.com/user-attachments/assets/965662ca-b42f-46b2-b5f1-4ce3c7b74fa9" />
 
 
-### C) İlçe Bazlı Kâr, Kâr Marjı ve SES Skoru Analizi
+### D) İlçe Bazlı Kâr, Kâr Marjı ve SES Skoru Analizi
 
 <img width="1186" height="805" alt="image" src="https://github.com/user-attachments/assets/d6729c4e-c335-46a2-836f-70bf19a5b060" />
 
 - SES skoru, finansal performansın en güçlü belirleyicisidir; yüksek SES bölgeleri daha yüksek kâr ve kâr marjı sağlamaktadır.
 
-### D) İlçe Bazlı Baskın Yaş Grubu (35-49), Talep ve Penetrasyon Analizi
+### E) İlçe Bazlı Baskın Yaş Grubu (35-49), Talep ve Penetrasyon Analizi
 
 <img width="1162" height="707" alt="image" src="https://github.com/user-attachments/assets/0786e7bb-6cd4-41d5-931c-103511896af0" />
 
 - Nilüfer mevcut en güçlü pazar; Osmangazi ve Yıldırım ise büyük nüfuslarına rağmen düşük penetrasyon ile büyüme fırsatları sunuyor.
 
-### E) Sosyo-Ekonomik Seviye ile KPI İlişkisi
+### F) Sosyo-Ekonomik Seviye ile KPI İlişkisi
 
 <img width="1120" height="807" alt="image" src="https://github.com/user-attachments/assets/17554dce-0d54-484e-91b0-9c704f009e60" />
 
@@ -134,7 +135,6 @@ Hücreler erişim sürelerine göre 4 sınıfa ayrıldı:
 10–15 dk
 15+ dk
 Her depo için bu SLA zonları oluşturuldu.
-
 
 <img width="1237" height="875" alt="image" src="https://github.com/user-attachments/assets/4f838adb-f5eb-4dca-832a-672d97b2e814" />
 
