@@ -133,6 +133,8 @@ Additionally, the generated performance indicators were correlated with **popula
 
 ## 📊 Service Area Analysis (ArcGIS Pro)
 
+<img width="1260" height="891" alt="image" src="https://github.com/user-attachments/assets/a5016f25-f39e-4792-86cb-ab197b8eab87" />
+
 ### A) Warehouse-Based Operational and Financial Performance KPIs
 
 <img width="1141" height="767" alt="image" src="https://github.com/user-attachments/assets/a56e4d6b-abdb-45f1-8a59-81ca0c97db7c" />
