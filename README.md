@@ -47,9 +47,10 @@ Bu değerler oranlanarak mahalle ölçeğinde kâr marjı (%) bulundu.
 - Kalabalık mahalleler yüksek gelir ve kâr potansiyeli sunuyor.
 
 ### E) Mahalle Bazında talep Yoğunluğu ve Penetrasyon Oranı Hesaplanması
-<img width="1684" height="108" alt="image" src="https://github.com/user-attachments/assets/b7fc9e37-2135-4cf6-952a-8977c703b9cc" />
 
--Her mahalledeki toplam sipariş sayısı hesaplandı. Mahalle bazında nüfusa bölünerek talep yoğunluğu (sipariş / kişi) bulundu.
+<img width="1362" height="316" alt="image" src="https://github.com/user-attachments/assets/1fbfa6d8-047d-4078-a157-deeca3e55ee1" />
+
+- Her mahalledeki toplam sipariş sayısı hesaplandı. Mahalle bazında nüfusa bölünerek talep yoğunluğu (sipariş / kişi) bulundu.
 Penetrasyon oranı için ise: Her mahalle için siparişlerden elde edilen benzersiz müşteri sayısı hesaplandı ve o mahallenin nüfus değerine bölündü.
 
 <img width="1243" height="879" alt="image" src="https://github.com/user-attachments/assets/3052674f-9372-46c8-9612-4758c0d4f984" />
@@ -155,7 +156,7 @@ Her depo için bu SLA zonları oluşturuldu.
 
 <img width="1019" height="770" alt="image" src="https://github.com/user-attachments/assets/f0573a09-34e2-4bdf-a719-3ee71b92cbd7" />
 
--wh_9 hacim lideri ancak yavaş; wh_7 en uzun süreyle riskli, wh_1 ve wh_3 hız avantajlı; diğer depolar optimizasyona ihtiyaç duyuyor.
+- wh_9 hacim lideri ancak yavaş; wh_7 en uzun süreyle riskli, wh_1 ve wh_3 hız avantajlı; diğer depolar optimizasyona ihtiyaç duyuyor.
 
 
 
